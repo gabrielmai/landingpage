@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  html{
+    --bg-color: linear-gradient(28.15deg,#5C0F80 36.62%, #250633 75.61%);
+    --text-color: white;
+    --primary-color: #6E00AD;
+  }
+
+  body{
+    background: var(--bg-color);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--text-color);
+    font-size: 100%;
+    margin: 0 20px;
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 400ms;
+  }
+
+  a:hover{
+    color: black;
+  }
+
+
+  p{
+    font-size: 18px;
+    
+    /*font-family: 'Inconsolata', monospace;*/
+
+    font-family: 'Cabin', monospace;
+  
+  }
+
+/* Definindo o header */
+
+  .cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+    justify-content:space-between;
+  }
+
+  img.avatar{
+    
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: var(--primary-color) solid 3px;
+    padding: 3px;
+  }
+
+/* Criando meu menu do header */
+  .navigation ul li{
+    display: inline;
+    list-style: none;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .navigation ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: all 400ms;
+    
+    background-color: #6E00AD;
+  }
+
+  .navigation ul li a:hover{
+    background-color: #4E007A;
+  }
+
+  /* Criando Sub Menu dos meus projetos */
+
+  .navigation ul ul{
+    display: none;
+    position: absolute;
+    width: 137px;
+    left: 0;
+    opacity: 0;
+    transition: all 400ms;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .navigation ul li:hover ul{
+    display: block;
+    opacity: 1;
+    
+  }
+
+  .navigation ul ul li a{
+    display: block;
+  }
+
+
+/* Estilizando o conteúdo da página */
+
+  .conteudo{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-top: 0.4px solid white;
+    border-bottom: 0.4px solid white;
+    padding-bottom: 20px;
+  }
+
+
+  .start{
+    padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    border-bottom: white solid 0.4px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .start h1{
+    
+    font-size: 25px;
+    border-bottom: white solid 0.4px;
+    margin-bottom: 10px;
+}
+
+  .empresaX{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    text-align: justify;
+  }
+
+  .empresaX h2{
+    font-size: 22px;
+    border-bottom: white solid 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .powerBI{
+    flex-direction: row;
+    margin: 10px 0 20px 0;
+    justify-content: center;
+    align-self: center;
+    max-width: 1024px;
+    max-height: 612px;
+    width: 95%;
+    box-shadow: 50px 50px 100px 100px rgba(185, 63, 63, 0.25);
+  }
+
+  .empresaY{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    text-align: justify;
+  }
+
+  .empresaY h2{
+    font-size: 22px;
+    border-bottom: white solid 0.4px;
+    margin-bottom: 10px;
+  }
+
+
+  
+  footer{
+    margin: 20px 0;
+  }
+
+  .myContacts h2{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .myContacts ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+    padding-bottom: 10px;
+    border-bottom: 0.4px white solid;
+  }
+
+  .goBack{
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+  }
